@@ -47,7 +47,7 @@ Password: guest
 
 ### Troubleshooting
 
-- If you see **RabbitMQ connect failed**, try running again:
+- If you see **RabbitMQ connect failed** in log, try running again:
 
 ```bash
 docker compose up --build
