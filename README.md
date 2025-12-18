@@ -47,11 +47,21 @@ Password: guest
 
 ### Troubleshooting
 
-- If you see **RabbitMQ connect failed** in log, try running again:
+- During the initial startup, you may see an error like:
+
+```bash
+RabbitMQ connect failed: connect ECONNREFUSED 172.18.0.3:5672
+```
+
+This can happen because the API service starts before RabbitMQ is fully ready.
+
+- In this case, simply stop the containers and run the following command again:
 
 ```bash
 docker compose up --build
 ```
+
+After restarting, the API should successfully connect to RabbitMQ.
 
 - If the issue persists or you encounter any other problems, please feel free to contact me directly.
 
