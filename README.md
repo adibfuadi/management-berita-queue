@@ -27,7 +27,9 @@ cd management-berita-queue
 
 ## build & start all services
 
+```bash
 docker compose up --build
+```
 
 ## How to Test
 
@@ -42,6 +44,16 @@ http://localhost:15672/
 User: guest
 Password: guest
 ```
+
+### Troubleshooting
+
+- If you see **RabbitMQ connect failed**, try running again:
+
+```bash
+docker compose up --build
+```
+
+- If the issue persists or you encounter any other problems, please feel free to contact me directly.
 
 ## Configuration Notes
 
