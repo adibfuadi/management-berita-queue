@@ -1,0 +1,19 @@
+{
+  "name": "management-berita",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.19.1",
+    "amqplib": "^0.10.9",
+    "express": "^5.2.1",
+    "pg": "^8.16.3"
+  }
+}

@@ -1,0 +1,27 @@
+###
+GET http://localhost:13000
+###
+
+### THIS FOR GET ALL NEWS
+GET http://localhost:13000/api/news?page=1&limit=10&q=bit
+###
+
+### THIS FOR ADD NEWS
+POST http://localhost:13000/api/news
+Content-Type: application/json
+
+{
+    "title": "Berita tentang technologi terbaru",
+    "content": "lorem dolor sit amet, consectetur adipiscing elit.",
+    "author": "Admin",
+    "source": "UnitTest"
+}
+###
+
+### ELASTICSEARCH TEST
+GET http://localhost:13000/api/search?q=technologi
+###
+
+### HIT THIS TO CREATE TABLES IF NOT EXISTS
+GET http://localhost:13000/api/setup
+###
