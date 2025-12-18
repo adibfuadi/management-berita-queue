@@ -36,13 +36,17 @@ docker compose up --build
 3. First, hit the following endpoint to create the `news` table: http://localhost:13000/api/setup
 4. After the table is created, you can test the other endpoints for creating, listing, and searching news.
 5. To view and monitor the RabbitMQ queue, you can access the RabbitMQ Management UI:
+
+```bash
 http://localhost:15672/
 User: guest
 Password: guest
+```
 
 ## Configuration Notes
+
 - This project does not require a .env file by default;
-all environment variables are defined in docker-compose.yaml and injected automatically into containers.
+  all environment variables are defined in docker-compose.yaml and injected automatically into containers.
 
 - Worker automatically processes messages from RabbitMQ and indexes them to Elasticsearch.
 
