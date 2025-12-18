@@ -3,7 +3,7 @@ GET http://localhost:13000
 ###
 
 ### THIS FOR GET ALL NEWS
-GET http://localhost:13000/api/news?page=1&limit=10&q=bit
+GET http://localhost:13000/api/news?page=1&limit=10&q=apple
 ###
 
 ### THIS FOR ADD NEWS
@@ -11,15 +11,15 @@ POST http://localhost:13000/api/news
 Content-Type: application/json
 
 {
-    "title": "Berita tentang technologi terbaru",
-    "content": "lorem dolor sit amet, consectetur adipiscing elit.",
+    "title": "Apple akan pindahkan perakitan dan pengemasan chip iPhone ke India",
+    "content": "Dilansir dari Macrumors pada Kamis, Apple sedang melakukan penjajakan dengan perusahaan semikonduktor CG Semi, yang saat ini sedang membangun salah satu fasilitas perakitan dan pengujian semikonduktor pertama di India, berlokasi di Sanand, Gujarat.Mengutip sumber yang mengetahui pembahasan tersebut, diskusi antara kedua pihak masih berada pada tahap awal. Jenis chip yang nantinya akan dikemas di fasilitas Sanand juga belum dapat dipastikan, meski diperkirakan chip untuk layar",
     "author": "Admin",
-    "source": "UnitTest"
+    "source": "Instagram"
 }
 ###
 
 ### ELASTICSEARCH TEST
-GET http://localhost:13000/api/search?q=technologi
+GET http://localhost:13000/api/search?q=apple
 ###
 
 ### HIT THIS TO CREATE TABLES IF NOT EXISTS
